@@ -1,0 +1,24 @@
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\bin\Debug\NMCNPM_QuanLyHocSinh.exe.config
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\bin\Debug\NMCNPM_QuanLyHocSinh.exe
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\bin\Debug\NMCNPM_QuanLyHocSinh.pdb
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.csprojResolveAssemblyReference.cache
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmChinhSuaDiem.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmChinhSuaThongTinHocSinh.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmDangNhap.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmInBangDiemLop.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmInBangDiemMon.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmInBaoCaoTongKetHocKi.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmInBaoCaoTongKetMon.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmInDanhSachLop.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmThemMoiHocSinh.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmThongTinHocSinh.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmXemDiemGVBM.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmXemDiemGVCN.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.frmManHinhChinh.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.Properties.Resources.resources
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.csproj.GenerateResource.Cache
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.exe
+C:\Users\Trung\Desktop\NMCNPM_QuanLyHocSinh\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.pdb
+C:\Users\pc\Desktop\Demo 3 layers\NMCNPM_QuanLyHocSinh\bin\Debug\NMCNPM_QuanLyHocSinh.exe.config
+C:\Users\pc\Desktop\Demo 3 layers\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.exe
+C:\Users\pc\Desktop\Demo 3 layers\NMCNPM_QuanLyHocSinh\obj\Debug\NMCNPM_QuanLyHocSinh.pdb

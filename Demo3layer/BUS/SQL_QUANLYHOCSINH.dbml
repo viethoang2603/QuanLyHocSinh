@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHS" Class="SQL_QUANLYHOCSINHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-PHBLNHE\SQLEXPRESS;Initial Catalog=QLHS;Integrated Security=True" SettingsObjectName="BUS.Properties.Settings" SettingsPropertyName="QLHSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BANGDIEMMON" Member="BANGDIEMMONs">
+    <Type Name="BANGDIEMMON">
+      <Column Name="MABANGDIEMMON" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAQTHOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAMONHOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEMTB" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="BANGDIEMMON_CT_DIEMMON" Member="CT_DIEMMONs" ThisKey="MABANGDIEMMON" OtherKey="MABANGDIEMMON" Type="CT_DIEMMON" />
+      <Association Name="MONHOC_BANGDIEMMON" Member="MONHOC" ThisKey="MAMONHOC" OtherKey="MAMONHOC" Type="MONHOC" IsForeignKey="true" />
+      <Association Name="QUATRINHHOC_BANGDIEMMON" Member="QUATRINHHOC" ThisKey="MAQTHOC" OtherKey="MAQTHOC" Type="QUATRINHHOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BAOCAOTONGKETHK" Member="BAOCAOTONGKETHKs">
+    <Type Name="BAOCAOTONGKETHK">
+      <Column Name="MAHK" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MALOP" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SOLUONGDAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TYLE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="HOCKY_BAOCAOTONGKETHK" Member="HOCKY" ThisKey="MAHK" OtherKey="MAHK" Type="HOCKY" IsForeignKey="true" />
+      <Association Name="LOP_BAOCAOTONGKETHK" Member="LOP" ThisKey="MALOP" OtherKey="MALOP" Type="LOP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_BCTKMON" Member="CT_BCTKMONs">
+    <Type Name="CT_BCTKMON">
+      <Column Name="MABCTKMON" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MALOP" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SOLUONGDAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TYLE" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="BAOCAOTONGKETMON_CT_BCTKMON" Member="BAOCAOTONGKETMON" ThisKey="MABCTKMON" OtherKey="MABCTKMON" Type="BAOCAOTONGKETMON" IsForeignKey="true" />
+      <Association Name="LOP_CT_BCTKMON" Member="LOP" ThisKey="MALOP" OtherKey="MALOP" Type="LOP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BAOCAOTONGKETMON" Member="BAOCAOTONGKETMONs">
+    <Type Name="BAOCAOTONGKETMON">
+      <Column Name="MABCTKMON" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAMONHOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAHOCKY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="BAOCAOTONGKETMON_CT_BCTKMON" Member="CT_BCTKMONs" ThisKey="MABCTKMON" OtherKey="MABCTKMON" Type="CT_BCTKMON" />
+      <Association Name="HOCKY_BAOCAOTONGKETMON" Member="HOCKY" ThisKey="MAHOCKY" OtherKey="MAHK" Type="HOCKY" IsForeignKey="true" />
+      <Association Name="MONHOC_BAOCAOTONGKETMON" Member="MONHOC" ThisKey="MAMONHOC" OtherKey="MAMONHOC" Type="MONHOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_DIEMMON" Member="CT_DIEMMONs">
+    <Type Name="CT_DIEMMON">
+      <Column Name="MABANGDIEMMON" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MALHKT" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DIEM" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="BANGDIEMMON_CT_DIEMMON" Member="BANGDIEMMON" ThisKey="MABANGDIEMMON" OtherKey="MABANGDIEMMON" Type="BANGDIEMMON" IsForeignKey="true" />
+      <Association Name="LOAIHINHKIEMTRA_CT_DIEMMON" Member="LOAIHINHKIEMTRA" ThisKey="MALHKT" OtherKey="MALHKT" Type="LOAIHINHKIEMTRA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOCKY" Member="HOCKies">
+    <Type Name="HOCKY">
+      <Column Name="MAHK" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOCKY" Member="HOCKY1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MANAM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HOCKY_BAOCAOTONGKETHK" Member="BAOCAOTONGKETHKs" ThisKey="MAHK" OtherKey="MAHK" Type="BAOCAOTONGKETHK" />
+      <Association Name="HOCKY_BAOCAOTONGKETMON" Member="BAOCAOTONGKETMONs" ThisKey="MAHK" OtherKey="MAHOCKY" Type="BAOCAOTONGKETMON" />
+      <Association Name="HOCKY_QUATRINHHOC" Member="QUATRINHHOCs" ThisKey="MAHK" OtherKey="MAHK" Type="QUATRINHHOC" />
+      <Association Name="NAMHOC_HOCKY" Member="NAMHOC" ThisKey="MANAM" OtherKey="MANAM" Type="NAMHOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOCSINH" Member="HOCSINHs">
+    <Type Name="HOCSINH">
+      <Column Name="MAHS" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GIOITINH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAYSINH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DIACHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HOCSINH_QUATRINHHOC" Member="QUATRINHHOCs" ThisKey="MAHS" OtherKey="MAHS" Type="QUATRINHHOC" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHOILOP" Member="KHOILOPs">
+    <Type Name="KHOILOP">
+      <Column Name="MAKHOI" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MANAM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TENKHOI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KHOI" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="SOLOP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="KHOILOP_LOP" Member="LOPs" ThisKey="MAKHOI" OtherKey="MAKHOI" Type="LOP" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIHINHKIEMTRA" Member="LOAIHINHKIEMTRAs">
+    <Type Name="LOAIHINHKIEMTRA">
+      <Column Name="MALHKT" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENLHKT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HESO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LOAIHINHKIEMTRA_CT_DIEMMON" Member="CT_DIEMMONs" ThisKey="MALHKT" OtherKey="MALHKT" Type="CT_DIEMMON" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOP" Member="LOPs">
+    <Type Name="LOP">
+      <Column Name="MALOP" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENLOP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAKHOI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SISO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LOP_BAOCAOTONGKETHK" Member="BAOCAOTONGKETHKs" ThisKey="MALOP" OtherKey="MALOP" Type="BAOCAOTONGKETHK" />
+      <Association Name="LOP_CT_BCTKMON" Member="CT_BCTKMONs" ThisKey="MALOP" OtherKey="MALOP" Type="CT_BCTKMON" />
+      <Association Name="LOP_QUATRINHHOC" Member="QUATRINHHOCs" ThisKey="MALOP" OtherKey="MALOP" Type="QUATRINHHOC" />
+      <Association Name="KHOILOP_LOP" Member="KHOILOP" ThisKey="MAKHOI" OtherKey="MAKHOI" Type="KHOILOP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MONHOC" Member="MONHOCs">
+    <Type Name="MONHOC">
+      <Column Name="MAMONHOC" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEMMONHOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="MONHOC_BANGDIEMMON" Member="BANGDIEMMONs" ThisKey="MAMONHOC" OtherKey="MAMONHOC" Type="BANGDIEMMON" />
+      <Association Name="MONHOC_BAOCAOTONGKETMON" Member="BAOCAOTONGKETMONs" ThisKey="MAMONHOC" OtherKey="MAMONHOC" Type="BAOCAOTONGKETMON" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NAMHOC" Member="NAMHOCs">
+    <Type Name="NAMHOC">
+      <Column Name="MANAM" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAM1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NAM2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="NAMHOC_HOCKY" Member="HOCKies" ThisKey="MANAM" OtherKey="MANAM" Type="HOCKY" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QUATRINHHOC" Member="QUATRINHHOCs">
+    <Type Name="QUATRINHHOC">
+      <Column Name="MAQTHOC" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAHS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MALOP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAHK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEMTBHK" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="QUATRINHHOC_BANGDIEMMON" Member="BANGDIEMMONs" ThisKey="MAQTHOC" OtherKey="MAQTHOC" Type="BANGDIEMMON" />
+      <Association Name="HOCKY_QUATRINHHOC" Member="HOCKY" ThisKey="MAHK" OtherKey="MAHK" Type="HOCKY" IsForeignKey="true" />
+      <Association Name="HOCSINH_QUATRINHHOC" Member="HOCSINH" ThisKey="MAHS" OtherKey="MAHS" Type="HOCSINH" IsForeignKey="true" />
+      <Association Name="LOP_QUATRINHHOC" Member="LOP" ThisKey="MALOP" OtherKey="MALOP" Type="LOP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THAMSO" Member="THAMSOs">
+    <Type Name="THAMSO">
+      <Column Name="TENTHAMSO" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GIATRI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_XoathongtinHocSinh" Method="sp_XoathongtinHocSinh">
+    <Parameter Name="mahs" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

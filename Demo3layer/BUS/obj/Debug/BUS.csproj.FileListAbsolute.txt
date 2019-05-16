@@ -1,0 +1,6 @@
+C:\Users\pc\Desktop\Demo 3 layers\3layer\BUS\bin\Debug\BUS.dll.config
+C:\Users\pc\Desktop\Demo 3 layers\3layer\BUS\bin\Debug\BUS.dll
+C:\Users\pc\Desktop\Demo 3 layers\3layer\BUS\bin\Debug\BUS.pdb
+C:\Users\pc\Desktop\Demo 3 layers\3layer\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\pc\Desktop\Demo 3 layers\3layer\BUS\obj\Debug\BUS.dll
+C:\Users\pc\Desktop\Demo 3 layers\3layer\BUS\obj\Debug\BUS.pdb
